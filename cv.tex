@@ -1,0 +1,91 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+\usepackage{hyperref}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Nikita}{Artyushov}
+\address{}{Tartu}{Estonia}
+\phone[mobile]{+372~5361~5889}
+\email{nikita.artyushov@gmail.com}
+\social[linkedin][https://www.linkedin.com/in/artyushov]{Nikita Artyushov}
+\social[github]{artyushov}
+\homepage{artyushov.me}
+
+\begin{document}
+\makecvtitle
+
+\section{Education}
+\cventry{2008--2013}{Masters}{}{St. Petersburg State University}{}{Faculty of Mathematics and Mechanics, Computer Science Chair}  % arguments 3 to 6 can be left empty
+
+\section{Languages}
+\cvitem{Russian}{Native}
+\cvitem{English}{Advanced}
+\cvitem{Turkish}{Elementary}
+% \cvitem{supervisors}{Supervisors}
+% \cvitem{description}{Short thesis abstract}
+
+\section{Areas of expertise}
+\cvitem{}{Application monitoring, search quality, A/B testing, evaluation metrics}
+
+\section{Experience}
+
+\cventry{2015--present}{Software Engineer}{\href{http://plumbr.eu}{Plumbr}}{Tartu}{Estonia}{The team I am currently a member of is responsible for memory aspect of application monitoring.\newline{}
+Main responsibilities and achievements:
+\begin{itemize}
+\item Designing and implementing heap dump analysis algorithms
+\item Supporting and improving different parts of the project from native part in java agent
+    to server deploy scripts
+\end{itemize}
+}
+
+\cventry{2011--2014}{Software Engineer}{\href{https://yandex.com/company/}{Yandex}}{St. Petersburg}{Russia}{Search Quality Evaluation Department\newline{}
+I was a part of the team developing online evaluation tools.\newline
+Key responsibilities:
+\begin{itemize}
+\item Developing and supporting a distributed platform for metrics computations
+\item Implementing new evaluation metrics
+\item Designing and developing a service from scratch for search KPIs computation
+\item Supporting various MapReduce scripts written in C++, Bash, Python.
+\end{itemize}}
+
+\section{Skills}
+\cvitem{General}{Java, Groovy, SQL, Bash, Unix, Spring, MapReduce, Git, Gradle}
+\cvitem{Minor}{Python, R, Statistics, CSS, Html, Javascript, Angular.js}
+
+\newpage
+\section{Non-work projects}
+\cvitem{}{
+\begin{itemize}
+\item JMH plugin for Intellij Idea (\href{https://plugins.jetbrains.com/plugin/7529?pr=idea}{link}). The reason for developing such plugin was that I wanted to learn Intellij Idea SDK and make running benchmarks in IDE as easy as running unit tests.
+\item \href{http://pipeinpipe.info}{http://pipeinpipe.info} - a student project dedicated to a sports game
+\end{itemize}}
+
+\section{Personal info}
+\cvitem{}{Work is an essential part of my life and I am happy to be one of those people who truly enjoy it. I'm strongly motivated by challenging problems like finding the causes of some bizarre bugs or performance bottlenecks as well as writing quality code with good architecture covered with tests. I would be glad to work on a project where the mere knowledge of a programming language won't be enough and where I could learn a lot of stuff from more experienced colleagues.\newline
+Besides that, I dance lindy-hop and do other kinds of sports such as: volleyball, football, basketball, whateverball, table tennis, etc.}
+\end{document}
+
+
+%% end of file `template.tex'.
