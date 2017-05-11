@@ -19,77 +19,64 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.75]{geometry}
+\usepackage[scale=0.75, top=2cm, bottom=2cm]{geometry}
 % \usepackage{hyperref}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Nikita}{Artyushov}
-\address{}{Tartu}{Estonia}
+\address{}{Tartu, Estonia}
 \phone[mobile]{+372~5361~5889}
 \email{nikita.artyushov@gmail.com}
 \social[linkedin][www.linkedin.com/in/artyushov]{Nikita Artyushov}
 \social[github]{artyushov}
-\homepage{artyushov.me}
 
 \begin{document}
 \makecvtitle
 
+\section{Experience}
+
+\cventry{Jan~2015--present}{Software Engineer}{\href{http://plumbr.eu}{Plumbr}}{Tartu}{Estonia}{
+\textbf{java, groovy, amazon-web-services, spring-boot, docker, gradle, apache-kafka}
+\vspace{1mm}
+\newline{}
+I played one of the core roles in two major projects at Plumbr.
+\vspace{1mm}
+\newline{}
+The first one is related to memory dumps analysis. I designed and implemented a service which reads heap dump of a java application, builds object graph, analyses it and produces a report about major memory consumers.
+\vspace{1mm}
+\newline{}
+The second project is related to distributed tracing. I was deeply involved into designing the whole concept from the ground up and then developed an application which assembles multiple parts of a distributed transaction into one entity.
+\vspace{1mm}
+\newline
+Besides that there were a lot of other tasks related to various parts of our product, including infrastructure development, front-end, etc.
+}
+
+\cventry{July~2011-- Dec~2014}{Software Engineer}{\href{https://yandex.com/company/}{Yandex}}{St. Petersburg}{Russia}{
+\textbf{java, spring, mapreduce, bigdata, git, maven}
+\vspace{1mm}
+\newline
+I worked at Search Quality Evaluation department. Our team was developing several internal services used to calculate various search quality metrics. The main pipeline involved preprocessing terabytes of data every day and then using it to efficiently calculate metric values for different search experiments with different filters.
+\vspace{1mm}
+\newline
+My responsibilities included implementation of new metrics designed by data analytics team. I was also in charge of developing and supporting tens of different html parsers which were used for crawling multiple search systems to compare their quality.
+}
+
 \section{Education}
 \cventry{2008--2013}{Masters}{}{St. Petersburg State University}{}{Faculty of Mathematics and Mechanics, Computer Science Chair}  % arguments 3 to 6 can be left empty
 
-\section{Languages}
-\cvitem{Russian}{Native}
-\cvitem{English}{Advanced}
-\cvitem{Turkish}{Elementary}
-% \cvitem{supervisors}{Supervisors}
-% \cvitem{description}{Short thesis abstract}
-
-\section{General}
-\cvitem{}{My primary programming language is Java in which I have a good expertise.
-One of my main concerns is writing clean and maintainable code as well as covering
-it with tests. I am a strong supporter of such best practices as code reviews, git flow
-and others.}
-
-\section{Experience}
-
-\cventry{2015--present}{Software Engineer}{\href{http://plumbr.eu}{Plumbr}}{Tartu}{Estonia}{The team I am currently a member of is responsible for memory aspect of application monitoring.\newline{}
-Main responsibilities and achievements:
-\begin{itemize}
-\item Designing and implementing heap dump analysis algorithms
-\item Supporting and improving different parts of the project from native part in java agent
-    to server deploy scripts
-\end{itemize}
-}
-
-\cventry{2011--2014}{Software Engineer}{\href{https://yandex.com/company/}{Yandex}}{St. Petersburg}{Russia}{Search Quality Evaluation Department\newline{}
-I was a part of the team developing online evaluation tools.\newline
-Key responsibilities:
-\begin{itemize}
-\item Developing and supporting a distributed platform for metrics computations
-\item Improving and expanding a zoo of HTML parsers
-\item Implementing new evaluation metrics
-\item Designing and developing a service from scratch for search KPIs computation
-\item Supporting various MapReduce scripts written in C++, Bash, Python.
-\end{itemize}}
-
-\newpage
-\section{Skills}
-\cvitem{General}{Java, Groovy, Multithreaded programming, SQL, Bash, Spring, MapReduce, Git, Mercurial, Gradle}
-\cvitem{Minor}{Python, R, Basic ML, Statistics, Scala, A/B testing, CSS, HTML, Javascript, Angular.js}
-
 \section{Non-work projects}
 \cvitem{}{
-\begin{itemize}
-\item JMH plugin for Intellij Idea (\href{https://plugins.jetbrains.com/plugin/7529?pr=idea}{link}). The reason for developing such plugin was that I wanted to learn Intellij Idea SDK and make running benchmarks in IDE as easy as running unit tests.
-\item \href{http://pipeinpipe.info}{http://pipeinpipe.info} - a student project dedicated to a sports game
-\end{itemize}}
+\textbf{JMH plugin for Intellij Idea} (\href{https://plugins.jetbrains.com/plugin/7529?pr=idea}{https://plugins.jetbrains.com/plugin/7529?pr=idea}).
+\newline{}
+The motivation behind this project was to make running JMH benchmarks from IDE as easy as running unit tests. I decided to implement it just to try something new and to contribute both to Intellij Idea and JMH communities.
+}
 
 \section{Personal info}
-\cvitem{}{Work is an essential part of my life and I am happy to be one of those people who truly enjoy it. I'm strongly motivated by challenging problems like finding the causes of some bizarre bugs or performance bottlenecks as well as writing quality code with good architecture covered with tests. I would be glad to work on a project where the mere knowledge of a programming language won't be enough and where I could learn a lot of stuff from more experienced colleagues.\newline
+\cvitem{}{I'm strongly motivated by challenging problems like finding the causes of some bizarre bugs or performance bottlenecks as well as writing quality code with good architecture covered with tests. I would be glad to work on a project where the mere knowledge of a programming language won't be enough and where I could learn a lot of stuff from more experienced colleagues. One of the things I couldn't live without is code review.\newline
 Besides that, I dance lindy-hop and do other kinds of sports such as: volleyball, football, basketball, whateverball, table tennis, etc.}
-\end{document}
 
+\end{document}
 
 %% end of file `template.tex'.
